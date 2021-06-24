@@ -8,7 +8,7 @@ def apiConsultarCasosTipificador():
             SELECT * 
             FROM requerimientos
             WHERE (centro IS NULL OR centro = 'undefined') AND
-            tipologia ILIKE '%Anulación%';
+            motivo <> 'Consulta'
         """
     }
     payload = json.dumps(payload)

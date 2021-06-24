@@ -28,7 +28,7 @@ def apiBackofficeFilter(pedidos):
     import requests
     url     = "https://api.smdigital.cl:8443/v0/picking/orders/findOrdersByFilter"
     payload = {
-        "size": 1000,
+        "size": 400,
         "page": 1,
         "filters": {
             "id": pedidos
